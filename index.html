@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to NexSys</title>
+    <title>Today, We Build Tomorrow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        p {
+            max-width: 600px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to NexSys</h1>
-    <p>This site is a personal project and is currently under construction. Thank you for your patience.</p>
+    <p>This site is a personal project for building AI models, cool games, and art projects. It is currently under construction. Thank you for your patience, this may or may not take a while.</p>
+    <button onclick="displayDate()">Check the Date</button>
+    <p id="date"></p>
+
+    <script>
+        function displayDate() {
+            document.getElementById("date").innerHTML = "Today's date is " + new Date().toDateString();
+        }
+    </script>
 </body>
 </html>
